@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+input,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: 0;
+}
+
+input {
+    -webkit-appearance: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    background: none;
+    line-height: 1;
+    /* Browsers have different default form fonts */
+    font-size: 13px;
+    font-family: Arial;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.hp-to-kw{
+display: flex;
+width: 100%;
+max-width: 300px;
+border: 1px solid black;
+margin: 300px auto;
+height: 100px;
+}
+
+.input-box{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+.input-unit{
+    display: flex;
+    align-items: center;
+}
+.input-unit .unit{
+    position: absolute;
+    right: 10px;
+}
+.input-box label{
+position: absolute;
+top: 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    justify-self:center ;
+    padding: 16px 40px 16px 6px;
+    font-size: 20px;
+}
+.button-box{
+    padding: 10px;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.button-box button{
+    cursor: pointer;
+    padding: 6px;
+    border: 1px solid black;
+}
