@@ -6,7 +6,8 @@ var kw = document.getElementsByClassName("kw")[0];
 function kwToKs() {
     ks.value = Math.round(kw.value * 1.35962);
     if (kw.value * 0 != 0) {
-        ks.value = "Unesite broj!"
+        kw.value = ""
+        ks.value = ""
     }
 }
 
@@ -15,6 +16,7 @@ function kwToKs() {
 function ksToKw() {
     kw.value = Math.round(ks.value * 0.7353);
     if (ks.value * 0 != 0) {
-        kw.value = "Unesite broj!"
+        ks.value = "";
+        kw.value = "";
     }
 }
