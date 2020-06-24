@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,28 +9,33 @@
 </head>
 
 <body>
+    <div class="converter-box">
+<h4>Konvertor</h4>
 
-    <div class="hp-to-kw">
-        <div class="input-box">
-            <label for="">Kilovati</label>
-            <div class="input-unit">
-                <input type="text" class="kw">
-                <span class="unit">KW</span>
+
+
+        <div class="converter">
+
+            <div class="input-box">
+                <label for="">Kilovati</label>
+                <div class="input-unit">
+                    <input type="text" class="kw" autofocus>
+                    <span class="unit">kW</span>
+                </div>
             </div>
-        </div>
-        <div class="button-box">
-            <button id="kw-to-hp" onclick="kwToKs()">&#187;</button>
-            <button id="hp-to-kw" onclick="ksToKw()">&#171;</button>
-        </div>
-        <div class="input-box">
-            <label for="">Konjske snage</label>
-            <div class="input-unit">
-                <input type="text" class="ks">
-                <span class="unit">KS</span>
+            <div class="button-box">
+                <button id="kw-to-hp" onclick="kwToKs()"><span class="char">&#187;</span></button>
+                <button id="hp-to-kw" onclick="ksToKw()"><span class="char">&#171;</span></button>
+            </div>
+            <div class="input-box">
+                <label for="">Konjske snage</label>
+                <div class="input-unit">
+                    <input type="text" class="ks">
+                    <span class="unit">KS</span>
+                </div>
             </div>
         </div>
     </div>
-
     <script src="./horse-power.js"></script>
 </body>
 
