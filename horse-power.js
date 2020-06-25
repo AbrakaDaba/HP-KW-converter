@@ -5,7 +5,7 @@ var kw = document.getElementsByClassName("kw")[0];
 // 1 kW = 1,359621617 KS
 function kwToKs() {
     ks.value = Math.round(kw.value * 1.359621617);
-    if (kw.value * 0 != 0) {
+    if (kw.value * 0 != 0 || kw.value == "") {
         kw.value = ""
         ks.value = ""
     }
@@ -15,7 +15,7 @@ function kwToKs() {
 // 1KS = 0,73549875 KW
 function ksToKw() {
     kw.value = Math.round(ks.value * 0.73549875);
-    if (ks.value * 0 != 0) {
+    if (ks.value * 0 != 0 || ks.value == "") {
         ks.value = "";
         kw.value = "";
     }
